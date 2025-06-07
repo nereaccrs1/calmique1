@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calmique Pilates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Parisienne&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #fabec0;
+      --blue: #b3d9e0;
+      --font-primary: 'Cardo', serif;
+      --font-script: 'Parisienne', cursive;
+      --text: #333;
+      --background: #fffefc;
+      --accent-light: #fdf1f3;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 1.1rem;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      background: var(--accent-light);
+    }
+
+    header h1 {
+      font-family: var(--font-script);
+      font-size: 4.5rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #666;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 1rem 0;
+      background-color: white;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--pink);
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--pink);
+      padding-left: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #f8f8f8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Calmique</h1>
+    <p>Movimiento consciente para cada etapa de tu vida</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#programas">Programas</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Calmique</h2>
+    <p>En Calmique, guiamos a mujeres en todas las etapas de su vida a través del movimiento consciente. Nuestras clases presenciales en Mónaco y programas online están diseñados para conectar cuerpo, mente y emociones con elegancia y serenidad. Nos especializamos en pilates prenatal y postparto, fusionando tradición y modernidad.</p>
+  </section>
+
+  <section id="programas">
+    <h2>Programas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Pilates Clásico</h3>
+        <p>Sesiones presenciales enfocadas en la alineación, respiración y fuerza desde el centro.</p>
+      </div>
+      <div class="card">
+        <h3>Embarazo Consciente</h3>
+        <p>Clases suaves adaptadas al embarazo, priorizando la movilidad, la circulación y el bienestar emocional.</p>
+      </div>
+      <div class="card">
+        <h3>Postparto</h3>
+        <p>Recuperación física y emocional con ejercicios suaves para tonificar el core y mejorar la postura.</p>
+      </div>
+      <div class="card">
+        <h3>Online Studio</h3>
+        <p>Clases en vivo o grabadas para practicar desde casa. Flexibilidad y elegancia al alcance de un clic.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="horarios">
+    <h2>Horarios y Planes</h2>
+    <p>Reservá sesiones presenciales o en línea según tu ritmo: clases sueltas, packs mensuales o programas personalizados. Consultá la disponibilidad directamente por email o redes sociales.</p>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <p class="testimonial">“Durante mi embarazo, cada clase fue un bálsamo. Calmique no solo trabaja tu cuerpo, también tu alma.” – Juliette R.</p>
+    <p class="testimonial">“El programa postparto me ayudó a reconectarme conmigo misma con delicadeza y guía profesional.” – Clara B.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Querés reservar una clase o saber más sobre los programas?</p>
+    <p>📧 contacto@calmique.com<br>
+       📍 Estudio en Mónaco / Online global<br>
+       📱 Instagram: <strong>@calmique.pilates</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Calmique. Pilates para la mujer moderna. Estudio en Mónaco y espacio virtual global.</p>
+  </footer>
+</body>
+</html>
